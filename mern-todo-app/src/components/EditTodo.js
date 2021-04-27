@@ -10,7 +10,7 @@ export default function EditTodo({ match: { params }, history }) {
 
   useEffect(() => {
     axios
-      .get(`http://localhost:4000/todos/${params.id}`)
+      .get(`/todos/${params.id}`)
       .then(res => {
         const {
           todoCompleted,

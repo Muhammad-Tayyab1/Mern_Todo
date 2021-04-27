@@ -18,7 +18,7 @@ export default function CreateTodo({ history }) {
     };
 
     axios
-      .post("http://localhost:4000/todos/add", newTodo)
+      .post("/todos/add", newTodo)
       .then(res => console.log(res.data))
       .then(() => history.push("/"));
   };
